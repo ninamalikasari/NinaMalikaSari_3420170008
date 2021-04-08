@@ -1,0 +1,41 @@
+package main
+
+import (
+	"fmt"
+)
+
+type barang struct {
+	nama  string
+	harga int
+}
+
+func main() {
+	var br1 = barang{"Sabun Cuci Piring", 50000}
+	var br2 = barang{"Sabun Mandi", 25000}
+	var br3 = barang{"Shampoo", 35000}
+	var br4 = barang{"Pasta Gigi", 10000}
+	var br5 = barang{"Tissue", 7500}
+
+	fmt.Println("+=========[ BELANJAAN ]==========+")
+	fmt.Println("| 1.", br1.nama, "  : Rp", br1.harga, " |")
+	fmt.Println("| 2.", br2.nama, "        : Rp", br2.harga, " |")
+	fmt.Println("| 3.", br3.nama, "            : Rp", br3.harga, " |")
+	fmt.Println("| 4.", br4.nama, "         : Rp", br4.harga, " |")
+	fmt.Println("| 5.", br5.nama, "             : Rp ", br5.harga, " |")
+	fmt.Println("+====================================+")
+
+	fmt.Println("  Total Belanja          ")
+
+	fmt.Println("|", br1.nama, "     		Rp", br1.harga)
+	fmt.Println("| X", 7, "item            : Rp", br1.harga*7)
+	fmt.Println("|", br2.nama, "                 Rp", br2.harga)
+	fmt.Println("| X", 9, "item             : Rp ", br2.harga*9)
+	fmt.Println("|", br3.nama, "                 Rp", br3.harga)
+	fmt.Println("| X", 10, "item             : Rp ", br3.harga*10)
+	fmt.Println("|", br4.nama, "                 Rp", br4.harga)
+	fmt.Println("| X", 11, "item             : Rp ", br4.harga*11)
+	fmt.Println("|", br4.nama, "                 Rp", br4.harga)
+	fmt.Println("| X", 20, "item             : Rp ", br4.harga*20)
+	fmt.Println("|+================================+|")
+
+}
